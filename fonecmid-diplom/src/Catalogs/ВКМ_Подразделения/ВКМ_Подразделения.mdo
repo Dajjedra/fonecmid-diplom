@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="58b7c170-da2f-4ceb-b62d-0e03b9f2a9e5">
+  <producedTypes>
+    <objectType typeId="d7c411e5-dfc0-407c-af78-f0b4c5ca279d" valueTypeId="4b8225ec-d826-4943-88e4-afa2340ab58e"/>
+    <refType typeId="5bef7634-d67b-4df0-a154-e02ca5bb9c54" valueTypeId="49376ba8-baa0-47d7-be8f-9dc553f7c0d2"/>
+    <selectionType typeId="c154c4e5-7447-4679-80ae-11637753c59b" valueTypeId="2318e428-0c87-4173-8a8b-038dc53eb155"/>
+    <listType typeId="5f6c2baf-f9bc-4867-a504-42bdd0747a90" valueTypeId="9c1aa7fe-d605-4c53-a004-bcb6869b189f"/>
+    <managerType typeId="68c0690e-52dd-43c8-8eb3-ddfee209124d" valueTypeId="ae027db4-04b7-4bd6-b15f-1fa36b778645"/>
+  </producedTypes>
+  <name>ВКМ_Подразделения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Подразделения</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ВКМ_Подразделения.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ВКМ_Подразделения.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Подразделение</value>
+  </objectPresentation>
+  <extendedObjectPresentation>
+    <key>ru</key>
+    <value>Подразделение</value>
+  </extendedObjectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Подразделения</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Подразделения</value>
+  </extendedListPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="53da87bb-3ca0-40ed-a52c-00d609d9b5ab">
+    <name>ВидПодразделения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид подразделения</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВКМ_ВидыПодразделений</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

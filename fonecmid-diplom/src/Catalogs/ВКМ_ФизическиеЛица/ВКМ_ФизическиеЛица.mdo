@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d31448f8-f8d4-4790-a763-0d090d5892d8">
+  <producedTypes>
+    <objectType typeId="5f171067-b545-46f1-8902-68b8934185fc" valueTypeId="c0bee3a9-958c-4192-8a9d-1c13d98fe868"/>
+    <refType typeId="a155d9ee-7c95-49cd-855f-c8875005d6de" valueTypeId="e78c0bf2-9d05-428f-ba37-0155f833738a"/>
+    <selectionType typeId="c6d107fb-5f7d-4852-a120-1899e9110da2" valueTypeId="d57b8d04-c687-471b-b879-9738efcdd21f"/>
+    <listType typeId="a44e4531-b184-49c6-9072-ba548f990978" valueTypeId="1bfaaec1-7d0c-4999-b44e-d35f645e8056"/>
+    <managerType typeId="251fd9e9-6c36-40ab-ab5f-bba329ec83a6" valueTypeId="1bf53c09-7ebb-41e8-a4b9-79cc44311747"/>
+  </producedTypes>
+  <name>ВКМ_ФизическиеЛица</name>
+  <synonym>
+    <key>ru</key>
+    <value>Физические лица</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ВКМ_ФизическиеЛица.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ВКМ_ФизическиеЛица.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Физическое лицо</value>
+  </objectPresentation>
+  <extendedObjectPresentation>
+    <key>ru</key>
+    <value>Физическое лицо</value>
+  </extendedObjectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Физические лица</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Физические лица</value>
+  </extendedListPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>50</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="b5c8df9c-8333-4e6d-97d4-d1aaa5ee1d72">
+    <name>Подразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВКМ_Подразделения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

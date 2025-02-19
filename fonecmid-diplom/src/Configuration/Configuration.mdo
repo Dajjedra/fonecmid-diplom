@@ -53,6 +53,8 @@
   <subsystems>Subsystem.ПодключаемыеОтчетыИОбработки</subsystems>
   <subsystems>Subsystem.ПокупкиИПродажи</subsystems>
   <subsystems>Subsystem.СтандартныеПодсистемы</subsystems>
+  <subsystems>Subsystem.ВКМ_ДобавленныеОбъекты</subsystems>
+  <subsystems>Subsystem.ВКМ_ОбслуживаниеКлиентов</subsystems>
   <styleItems>StyleItem.ВажнаяНадписьШрифт</styleItems>
   <styleItems>StyleItem.ВладелецФайловШрифт</styleItems>
   <styleItems>StyleItem.ВычисленноеПравоДоступаЦвет</styleItems>
@@ -623,6 +625,11 @@
   <roles>Role.ЧтениеДополнительныхСведений</roles>
   <roles>Role.ЧтениеНСИ</roles>
   <roles>Role.ЧтениеУчетныхЗаписейЭлектроннойПочты</roles>
+  <roles>Role.ВКМ_РедактированиеОбслуживаниеКлиентов</roles>
+  <roles>Role.ВКМ_ИспользованиеБотов</roles>
+  <roles>Role.ВКМ_МассовоеСозданиеРеализаций</roles>
+  <roles>Role.ВКМ_ОбслуживаниеКлиентов</roles>
+  <roles>Role.ВКМ_КадровикРасчетчик</roles>
   <commonTemplates>CommonTemplate.ДанныеПечатиОбщиеРеквизиты</commonTemplates>
   <commonTemplates>CommonTemplate.ДанныеПечатиРегистрСимволов</commonTemplates>
   <commonTemplates>CommonTemplate.ИнструкцияКакВыполнитьНастройкуМакетаOfficeOpen</commonTemplates>
@@ -880,6 +887,7 @@
   <commonModules>CommonModule.ФайловаяСистемаСлужебныйКлиентСервер</commonModules>
   <commonModules>CommonModule.ФизическиеЛицаКлиентСервер</commonModules>
   <commonModules>CommonModule.ФизическиеЛицаКлиентСерверЛокализация</commonModules>
+  <commonModules>CommonModule.ВКМ_Телеграм</commonModules>
   <exchangePlans>ExchangePlan.ОбновлениеИнформационнойБазы</exchangePlans>
   <xDTOPackages>XDTOPackage.ApdexExport</xDTOPackages>
   <xDTOPackages>XDTOPackage.ApdexExport_1_0_0_2</xDTOPackages>
@@ -892,6 +900,7 @@
   <xDTOPackages>XDTOPackage.Адрес</xDTOPackages>
   <xDTOPackages>XDTOPackage.КонтактнаяИнформация</xDTOPackages>
   <webServices>WebService.InterfaceVersion</webServices>
+  <httpServices>HTTPService.ВКМ_Боты</httpServices>
   <eventSubscriptions>EventSubscription.ВариантыОтчетовПередУдалениемИдентификатораОбъектаМетаданных</eventSubscriptions>
   <eventSubscriptions>EventSubscription.ВариантыОтчетовПриУдаленииПользователя</eventSubscriptions>
   <eventSubscriptions>EventSubscription.ВключитьРегламентноеЗаданиеПриИзмененииФункциональнойОпции</eventSubscriptions>
@@ -961,6 +970,7 @@
   <scheduledJobs>ScheduledJob.УстановкаПериодаРассчитанныхИтогов</scheduledJobs>
   <scheduledJobs>ScheduledJob.УстановкаПорядкаОтложенногоОбновленияВМоделиСервиса</scheduledJobs>
   <scheduledJobs>ScheduledJob.ЭкспортОценкиПроизводительности</scheduledJobs>
+  <scheduledJobs>ScheduledJob.ВКМ_ОтправкаУведомленийВТГ</scheduledJobs>
   <settingsStorages>SettingsStorage.ХранилищеВариантовОтчетов</settingsStorages>
   <functionalOptions>FunctionalOption.ВыполнятьЗамерыПроизводительности</functionalOptions>
   <functionalOptions>FunctionalOption.ИспользоватьВнешнихПользователей</functionalOptions>
@@ -1017,6 +1027,8 @@
   <definedTypes>DefinedType.ПрисоединенныйФайл</definedTypes>
   <definedTypes>DefinedType.ПрисоединенныйФайлОбъект</definedTypes>
   <definedTypes>DefinedType.ФизическоеЛицо</definedTypes>
+  <definedTypes>DefinedType.ВКМ_Сумма</definedTypes>
+  <definedTypes>DefinedType.ВКМ_Количество</definedTypes>
   <commonCommands>CommonCommand.ВремяТекущегоСеанса</commonCommands>
   <commonCommands>CommonCommand.ВсеФайлы</commonCommands>
   <commonCommands>CommonCommand.ДополнительныеОбработкиАдминистрирование</commonCommands>
@@ -1045,6 +1057,10 @@
   <commandGroups>CommandGroup.Информация</commandGroups>
   <commandGroups>CommandGroup.Органайзер</commandGroups>
   <commandGroups>CommandGroup.Печать</commandGroups>
+  <commandGroups>CommandGroup.ВКМ_Основные</commandGroups>
+  <commandGroups>CommandGroup.ВКМ_Документы</commandGroups>
+  <commandGroups>CommandGroup.ВКМ_Справочники</commandGroups>
+  <commandGroups>CommandGroup.ВКМ_Регистры</commandGroups>
   <constants>Constant.АвтоматическиНастраиватьРазрешенияВПрофиляхБезопасности</constants>
   <constants>Constant.АдресПубликацииИнформационнойБазыВИнтернете</constants>
   <constants>Constant.ГлавныйУзел</constants>
@@ -1111,6 +1127,10 @@
   <constants>Constant.УдалитьНастройкиВходаПользователей</constants>
   <constants>Constant.УчетнаяЗаписьДляВосстановленияПароля</constants>
   <constants>Constant.ХранитьФайлыВТомахНаДиске</constants>
+  <constants>Constant.ВКМ_ТокенУправленияТелеграмБотом</constants>
+  <constants>Constant.ВКМ_ИдентификаторГруппыДляОповещения</constants>
+  <constants>Constant.ВКМ_НоменклатураАбонентскаяПлата</constants>
+  <constants>Constant.ВКМ_НоменклатураРаботыСпециалиста</constants>
   <commonForms>CommonForm.БлокировкаРаботыСВнешнимиРесурсами</commonForms>
   <commonForms>CommonForm.ВводЗначенийСпискомСФлажками</commonForms>
   <commonForms>CommonForm.Вопрос</commonForms>
@@ -1213,11 +1233,21 @@
   <catalogs>Catalog.УчетныеЗаписиСинхронизацииФайлов</catalogs>
   <catalogs>Catalog.УчетныеЗаписиЭлектроннойПочты</catalogs>
   <catalogs>Catalog.Файлы</catalogs>
+  <catalogs>Catalog.ВКМ_ФизическиеЛица</catalogs>
+  <catalogs>Catalog.ВКМ_Подразделения</catalogs>
+  <catalogs>Catalog.ВКМ_ОбслуживаниеКлиентаПрисоединенныеФайлы</catalogs>
+  <catalogs>Catalog.ВКМ_УведомленияТелеграмБоту</catalogs>
+  <catalogs>Catalog.ВКМ_ГрафикиРаботы</catalogs>
   <documents>Document.ЗаказПокупателя</documents>
   <documents>Document.ОплатаОтПокупателя</documents>
   <documents>Document.ОплатаПоставщику</documents>
   <documents>Document.ПоступлениеТоваровУслуг</documents>
   <documents>Document.РеализацияТоваровУслуг</documents>
+  <documents>Document.ВКМ_ОбслуживаниеКлиента</documents>
+  <documents>Document.ВКМ_НачислениеЗарплаты</documents>
+  <documents>Document.ВКМ_НачислениеФиксированнойПремии</documents>
+  <documents>Document.ВКМ_ВыплатаЗарплаты</documents>
+  <documents>Document.ВКМ_ГрафикОтпусков</documents>
   <documentJournals>DocumentJournal.Деньги</documentJournals>
   <enums>Enum.ВариантыОтображенияМеток</enums>
   <enums>Enum.ВариантыОчисткиФайлов</enums>
@@ -1264,6 +1294,7 @@
   <enums>Enum.ФорматыХраненияОдностраничныхФайлов</enums>
   <enums>Enum.ЦветаСвойств</enums>
   <enums>Enum.ЦветностиИзображения</enums>
+  <enums>Enum.ВКМ_ВидыПодразделений</enums>
   <reports>Report.АнализЖурналаРегистрации</reports>
   <reports>Report.АнализПравДоступа</reports>
   <reports>Report.ДлительностьОтложенногоОбновления</reports>
@@ -1279,6 +1310,10 @@
   <reports>Report.ПрогрессОтложенногоОбновления</reports>
   <reports>Report.СведенияОПользователях</reports>
   <reports>Report.УниверсальныйОтчет</reports>
+  <reports>Report.ВКМ_ВыработкаСпециалистов</reports>
+  <reports>Report.ВКМ_АнализВыставленныхСчетов</reports>
+  <reports>Report.ВКМ_РасчетыССотрудниками</reports>
+  <reports>Report.ВКМ_РасходЗапланированныхОтпусков</reports>
   <dataProcessors>DataProcessor.АвтоматическоеИзвлечениеТекстов</dataProcessors>
   <dataProcessors>DataProcessor.ВводКонтактнойИнформации</dataProcessors>
   <dataProcessors>DataProcessor.ГрупповоеИзменениеРеквизитов</dataProcessors>
@@ -1304,6 +1339,8 @@
   <dataProcessors>DataProcessor.Сканирование</dataProcessors>
   <dataProcessors>DataProcessor.УдалениеПомеченныхОбъектов</dataProcessors>
   <dataProcessors>DataProcessor.УправлениеИтогамиИАгрегатами</dataProcessors>
+  <dataProcessors>DataProcessor.ВКМ_МассовоеСозданиеАктов</dataProcessors>
+  <dataProcessors>DataProcessor.ВКМ_ЗаполнениеГрафика</dataProcessors>
   <informationRegisters>InformationRegister.БезопасноеХранилищеДанных</informationRegisters>
   <informationRegisters>InformationRegister.БезопасноеХранилищеДанныхОбластейДанных</informationRegisters>
   <informationRegisters>InformationRegister.ВерсииПодсистем</informationRegisters>
@@ -1372,11 +1409,24 @@
   <informationRegisters>InformationRegister.УдаляемыеОбъекты</informationRegisters>
   <informationRegisters>InformationRegister.ФайлыВРабочемКаталоге</informationRegisters>
   <informationRegisters>InformationRegister.ФиксацияОбработкиДанныхОбработчиками</informationRegisters>
+  <informationRegisters>InformationRegister.ВКМ_УсловияОплатыСотрудников</informationRegisters>
+  <informationRegisters>InformationRegister.ВКМ_ГрафикиРаботы</informationRegisters>
   <accumulationRegisters>AccumulationRegister.ЗадолженностьПокупателей</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.ЗадолженностьПоставщикам</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.Затраты</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.ОбработкаЗаказов</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.ОстаткиТоваров</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.Продажи</accumulationRegisters>
+  <accumulationRegisters>AccumulationRegister.ВКМ_ВыполненныеКлиентуРаботы</accumulationRegisters>
+  <accumulationRegisters>AccumulationRegister.ВКМ_ВыставленныеКОплатеРаботы</accumulationRegisters>
+  <accumulationRegisters>AccumulationRegister.ВКМ_ВыполненныеСотрудникомРаботы</accumulationRegisters>
+  <accumulationRegisters>AccumulationRegister.ВКМ_ВзаиморасчетыССотрудниками</accumulationRegisters>
+  <accumulationRegisters>AccumulationRegister.ВКМ_КоличествоДнейОтпуска</accumulationRegisters>
   <chartsOfCharacteristicTypes>ChartOfCharacteristicTypes.ДополнительныеРеквизитыИСведения</chartsOfCharacteristicTypes>
+  <chartsOfCalculationTypes>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления</chartsOfCalculationTypes>
+  <chartsOfCalculationTypes>ChartOfCalculationTypes.ВКМ_ДополнительныеНачисления</chartsOfCalculationTypes>
+  <chartsOfCalculationTypes>ChartOfCalculationTypes.ВКМ_Удержания</chartsOfCalculationTypes>
+  <calculationRegisters>CalculationRegister.ВКМ_ОсновныеНачисления</calculationRegisters>
+  <calculationRegisters>CalculationRegister.ВКМ_ДополнительныеНачисления</calculationRegisters>
+  <calculationRegisters>CalculationRegister.ВКМ_Удержания</calculationRegisters>
 </mdclass:Configuration>

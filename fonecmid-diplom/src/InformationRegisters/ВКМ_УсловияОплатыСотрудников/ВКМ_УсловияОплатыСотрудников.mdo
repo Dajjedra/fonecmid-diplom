@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e6c3b880-8799-45d1-9a9f-1ac185d80593">
+  <producedTypes>
+    <selectionType typeId="95bd6687-0852-4c0d-9f32-464fb611afcc" valueTypeId="b253559f-4ed6-464d-a344-3175e3fbfc9d"/>
+    <listType typeId="6db935aa-864a-444c-931e-96f9a230dfb1" valueTypeId="49df7ca6-322c-4cd9-8d30-e1f2390b655c"/>
+    <managerType typeId="ede7bb9e-f02e-4bfd-b82d-cdc214ce5ad4" valueTypeId="aed5a99f-cd46-469d-99a9-80435dbcc59d"/>
+    <recordSetType typeId="89547be9-ac4d-40a0-80c4-49a6cbeb6acf" valueTypeId="0a1c262d-0eb0-485a-8525-b3a373b73f98"/>
+    <recordKeyType typeId="400616a7-7f2c-4418-8658-e26737088c96" valueTypeId="54abbbc8-b946-4754-848d-c272fc513b41"/>
+    <recordType typeId="26258430-b3d4-401e-8ff6-32359a817850" valueTypeId="0d120850-af16-473e-8782-15f53b328b7f"/>
+    <recordManagerType typeId="6ab01161-a08a-4be5-9051-212dd63f10b9" valueTypeId="17509bcd-6086-46f0-b655-cbd65a4ce188"/>
+  </producedTypes>
+  <name>ВКМ_УсловияОплатыСотрудников</name>
+  <synonym>
+    <key>ru</key>
+    <value>Условия оплаты сотрудников</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.ВКМ_УсловияОплатыСотрудников.Form.ФормаЗаписи</defaultRecordForm>
+  <informationRegisterPeriodicity>Month</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Условие оплаты сотрудников</value>
+  </recordPresentation>
+  <extendedRecordPresentation>
+    <key>ru</key>
+    <value>Условие оплаты сотрудников</value>
+  </extendedRecordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Условия оплаты сотрудников</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Условия оплаты сотрудников</value>
+  </extendedListPresentation>
+  <resources uuid="8e7a20a5-d7bf-4cc7-8bbd-4ca594ddcc81">
+    <name>Оклад</name>
+    <synonym>
+      <key>ru</key>
+      <value>Оклад</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ВКМ_Сумма</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="9021fafc-70c1-4fca-b4f4-fbec9f85370d">
+    <name>ПроцентОтРабот</name>
+    <synonym>
+      <key>ru</key>
+      <value>Процент от работ</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <format>
+      <key>ru</key>
+      <value>ЧН=0</value>
+    </format>
+    <editFormat>
+      <key>ru</key>
+      <value>ЧН=0</value>
+    </editFormat>
+    <mask>999</mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="f1274da3-8349-482c-a94e-3ba0e434cee5">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВКМ_ФизическиеЛица</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="82f05fee-0bfa-4832-b483-08f61c35a927">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>
