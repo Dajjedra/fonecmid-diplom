@@ -59,6 +59,17 @@
 		</right>
 	</object>
 	<object>
+		<name>AccumulationRegister.ВКМ_КоличествоДнейОтпуска</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Document.ВКМ_НачислениеЗарплаты</name>
 		<right>
 			<name>Read</name>
@@ -269,6 +280,17 @@
 		</right>
 	</object>
 	<object>
+		<name>AccumulationRegister.ВКМ_ВыполненныеСотрудникомРаботы</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Subsystem.ВКМ_ОбслуживаниеКлиентов</name>
 		<right>
 			<name>View</name>
@@ -404,6 +426,17 @@
 		</right>
 		<right>
 			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>AccumulationRegister.ВКМ_ВзаиморасчетыССотрудниками</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
 			<value>true</value>
 		</right>
 	</object>

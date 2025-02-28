@@ -48,4 +48,5 @@
   <content>AccumulationRegister.ВКМ_КоличествоДнейОтпуска</content>
   <content>Report.ВКМ_РасходЗапланированныхОтпусков</content>
   <content>ScheduledJob.ВКМ_ОтправкаУведомленийВТГ</content>
+  <content>DataProcessor.ВКМ_КалендарьСпециалистов</content>
 </mdclass:Subsystem>

@@ -42,15 +42,19 @@
 			<value>true</value>
 		</right>
 		<right>
+			<name>InteractiveClearDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
 			<name>InteractivePosting</name>
 			<value>true</value>
 		</right>
 		<right>
-			<name>InteractivePostingRegular</name>
+			<name>InteractiveUndoPosting</name>
 			<value>true</value>
 		</right>
 		<right>
-			<name>InteractiveUndoPosting</name>
+			<name>InputByString</name>
 			<value>true</value>
 		</right>
 	</object>
